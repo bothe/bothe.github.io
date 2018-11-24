@@ -27,6 +27,33 @@
 	    clear: both;
 	}
 	</style>
+	<style>
+	.tooltip {
+	    position: relative;
+	    display: inline-block;
+	    border-bottom: 1px dotted black;
+	}
+
+	.tooltip .tooltiptext {
+	    visibility: hidden;
+	    width: 80%;
+	    background-color: green;
+	    color: #fff;
+	    text-align: center;
+	    border-radius: 6px;
+	    padding: 5px 0;
+	    
+	    /* Position the tooltip */
+	    position: absolute;
+	    z-index: 1;
+	    top: -5px;
+	    left: 105%;
+	}
+
+	.tooltip:hover .tooltiptext {
+	    visibility: visible;
+	}
+	</style>
 
         <!-- CSS -->
         <link href="assets/css/jquery.mb.YTPlayer.min.css" rel="stylesheet">
@@ -75,11 +102,22 @@
                                     <div class="title__description">PhD Fellow at the University of Hamburg <br>Hamburg, Germany</div>
 
                                     <!-- Options btn color: .btn-success | .btn-info | .btn-warning | .btn-danger | .btn-primary -->
-                                    <div class="title__action"><a href="https://secure-robots.eu/fellows/bothe/" target="_blank" class="btn btn-success">Fellow of SECURE EU Project</a></div> <br>
-                                    <div class="title__action"><a href="https://crbothe.github.io/discourse-wizard/" target="_blank" class="btn btn-success">Discourse-Wizard: Live Web-Demo</a></div> <br>
-                                    <div class="title__action"><a href="https://secure-robots.eu/fellows/bothe/secondment-project/" target="_blank" class="btn btn-success">Dialogue-based Polite Navigation: Video-Demo</a></div> <br>
-                                    <div class="title__action"><a href="https://secure-robots.eu/fellows/bothe/cv-and-activities/" target="_blank" class="btn btn-success">CV and Activities</a></div> <br>
+                                    <div class="title__action tooltip"><a href="https://secure-robots.eu/fellows/bothe/" target="_blank" class="btn btn-success">Fellow of SECURE EU Project</a>
+				      <span class="tooltiptext">Click to read my profile and list of publications at<br> www.secure-robots.eu website.</span>
+				    </div> <br> <br>
 
+                                    <div class="title__action tooltip"><a href="https://crbothe.github.io/discourse-wizard/" target="_blank" class="btn btn-success">Discourse-Wizard: Live Web-Demo</a>
+				      <span class="tooltiptext">Discourse-Wizard:<br> Discovering Deep Discourse Structure in your Conversation with RNNs.</span>
+				    </div> <br> <br>
+
+                                    <div class="title__action tooltip"><a href="https://secure-robots.eu/fellows/bothe/secondment-project/" target="_blank" class="btn btn-success">Dialogue-based Polite Navigation: Video-Demo</a>
+				      <span class="tooltiptext">Secondment Project: Dialogue-based Navigation with Multivariate Adaptation driven by Intention and Politeness for Social Robots.</span>
+				    </div> <br> <br>
+
+                                    <div class="title__action tooltip"><a href="https://secure-robots.eu/fellows/bothe/cv-and-activities/" target="_blank" class="btn btn-success">CV and Activities</a>
+				      <span class="tooltiptext">Click to read my detailed CV and list of curricular activities.</span>
+				    </div> <br> <br>
+				    <div class="title__description">Areas of Interest:<br>Human -Robot Interaction, Natural Language Processing, Machine and Deep Learning, Artificial Intelligence, Computer Vision</div>
                                 </div>
                                 <!-- .title-01 -->
                             </div>
@@ -99,8 +137,9 @@
             <!-- .hero-section -->
         </div>
         <div class="button-group">
-            <a href="https://secure-robots.eu/fellows/bothe/" target="_blank" class="btn btn-outline-success button-sm">About</a>
+            <a href="https://www.inf.uni-hamburg.de/en/inst/ab/wtm/people/bothe.html" target="_blank" class="btn btn-outline-success button-sm">About at Uni-Hamburg</a>
             <a href="https://www.researchgate.net/profile/Chandrakant_Bothe" target="_blank" class="btn btn-outline-success button-sm">ResearchGate</a>
+            <a href="https://scholar.google.de/citations?user=tbXp3XsAAAAJ&hl=en" target="_blank" class="btn btn-outline-success button-sm">GoogleScholar</a>
             <a href="https://www.linkedin.com/in/chandrakant-bothe-a0845336/" target="_blank" class="btn btn-outline-success button-sm">LinkedIn</a>
         </div>
 

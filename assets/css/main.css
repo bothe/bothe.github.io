@@ -1190,7 +1190,7 @@ h6, .h6 {
   white-space: nowrap;
   vertical-align: middle;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 1000;
   text-transform: uppercase;
   letter-spacing: 1.75px;
   padding: 1rem 3.125rem;
@@ -2588,5 +2588,5 @@ xclip
 }
 .button-sm{
   padding: 10px 15px;
-  font-size: 8px;
+  font-size: 14px;
 }
